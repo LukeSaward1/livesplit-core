@@ -212,8 +212,12 @@ impl Display for FractionInner {
 /// `TimeWithFraction` combines both the `Time` and `Fraction` structs into one,
 /// allowing both to be accessed from a single struct.
 pub struct TimeWithFraction {
-    time: Time,
-    fraction: Fraction,
+    /// The `time` field, which houses an instance of the `Time` struct. The `0:00`
+    /// part of the timer.
+    pub time: Time,
+    /// The `struct` field, which houses an instance of the `Fraction` struct. The
+    /// `.00` part of the timer.
+    pub fraction: Fraction,
 }
 
 impl TimeFormatter<'_> for TimeWithFraction {
