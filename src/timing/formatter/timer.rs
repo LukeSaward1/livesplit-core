@@ -240,6 +240,16 @@ impl Display for TimeWithFractionInner {
     }
 }
 
+impl TimeWithFraction {
+    /// Creates a new `TimeWithFraction` given a `DigitsFormat` and `Accuracy`.
+    pub const fn new(digits_format: DigitsFormat, accuracy: Accuracy) -> Self {
+        TimeWithFraction {
+            time: Time::with_digits_format(digits_format),
+            fraction: Fraction::with_accuracy(accuracy),
+        }
+    }
+}
+
 /// A `TimeInner`/`FractionInner` to be formatted as the combined parts of the Time Formatter
 /// Pair.
 pub struct TimeWithFractionInner {
