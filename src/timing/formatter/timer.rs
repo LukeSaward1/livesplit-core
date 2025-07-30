@@ -250,6 +250,7 @@ impl TimeWithFraction {
     }
 }
 
+
 /// A `TimeInner`/`FractionInner` to be formatted as the combined parts of the Time Formatter
 /// Pair.
 pub struct TimeWithFractionInner {
