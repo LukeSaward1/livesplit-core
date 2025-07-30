@@ -45,8 +45,8 @@ impl Time {
         Time { digits_format }
     }
 
-    /// Gets the current DigitsFormat in use by the instance of Time.
-    pub const fn get_digits_format(&self) -> DigitsFormat {
+    /// Returns the current DigitsFormat in use by the instance of Time.
+    pub const fn digits_format(&self) -> DigitsFormat {
         self.digits_format
     }
 
@@ -167,8 +167,8 @@ impl Fraction {
         Fraction { accuracy }
     }
 
-    /// Gets the current Accuracy in use by the instance of Time.
-    pub const fn get_accuracy(&self) -> Accuracy {
+    /// Returns the current Accuracy in use by the instance of Time.
+    pub const fn accuracy(&self) -> Accuracy {
         self.accuracy
     }
 
