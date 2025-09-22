@@ -4,7 +4,7 @@
 mod alignment;
 mod color;
 mod field;
-mod font;
+pub mod font;
 mod gradient;
 mod image;
 mod layout_background;
